@@ -1,0 +1,555 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f2f2f2;
+  margin: 0;
+  font-family: "Poppins";
+}
+
+section {
+  padding: 0;
+  width: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar {
+  position: fixed;
+  background: rgb(0, 0, 0);
+  height: 4em;
+  margin-right: 0;
+  padding-right: 0;
+  width: 100%;
+}
+.navbar .logo {
+  background: rgba(0, 0, 0, 0.19);
+  width: 6em;
+}
+.navbar .container {
+  display: flex;
+  place-content: space-between;
+}
+.navbar .menu {
+  width: 2em;
+  margin-left: 17em;
+  margin-bottom: 1em;
+  margin-right: 0;
+  padding-right: 1em;
+  padding-top: 1em;
+  cursor: pointer;
+}
+.navbar nav {
+  display: none;
+}
+
+.hero .arrow {
+  display: none;
+}
+.hero .my_hero {
+  width: auto;
+  margin-right: 0;
+  padding-right: 0;
+}
+.hero .About {
+  padding-left: 10em;
+  padding-top: 2em;
+}
+.hero .About span {
+  font-size: 1.3em;
+  color: rgba(0, 0, 0, 0.842);
+  font-style: bold;
+}
+.hero .About span1 {
+  font-size: 1.3em;
+  color: red;
+  font-style: bold;
+}
+.hero .page {
+  margin-top: 1em;
+  padding-left: 0;
+  margin-left: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: rgba(4, 4, 4, 0.841);
+  margin-right: 0;
+  padding-right: 0;
+  width: auto;
+}
+.hero .page .left_col {
+  width: 17em;
+  background-color: grey;
+  color: white;
+  padding-right: 0;
+  padding-left: 1em;
+  padding-top: 0.1em;
+  margin-left: 6.5em;
+  margin-bottom: 0;
+  height: 25em;
+  border-color: red;
+  border-radius: 1em;
+}
+.hero .page .left_col span {
+  font-size: 2em;
+  font-style: bold;
+}
+.hero .page .left_col .year {
+  margin-top: -1em;
+  padding-top: 0;
+  margin-bottom: 4em;
+  color: rgba(250, 246, 246, 0.6156862745);
+  font-size: 0.8em;
+}
+.hero .page .left_col .know_div {
+  margin-top: 2em;
+}
+.hero .page .left_col .know_div a:hover {
+  background-color: red;
+  color: white;
+}
+.hero .page .left_col .know_div .know {
+  text-decoration: none;
+  font-weight: 500;
+  color: red;
+  border-color: red;
+  background-color: grey;
+  border-radius: 1em;
+  padding: 0.6em 1.3em;
+  display: inline-block;
+  border: solid 2.1px;
+}
+.hero .page .right_col {
+  width: 17em;
+  background-color: grey;
+  color: white;
+  margin-top: 3em;
+  margin-right: -5em;
+  padding-right: 0;
+  padding-left: 1.3em;
+  padding-top: 0.1em;
+  margin-left: 6.5em;
+  margin-bottom: 0;
+  height: 25em;
+  border-color: red;
+  border-radius: 1em;
+}
+.hero .page .right_col span {
+  font-size: 2em;
+  font-style: bold;
+}
+.hero .page .right_col .year {
+  margin-top: -1em;
+  padding-top: 0;
+  margin-bottom: 4em;
+  color: rgba(250, 246, 246, 0.6156862745);
+  font-size: 0.8em;
+}
+.hero .page .right_col ul {
+  margin-left: 0;
+  margin-top: -1em;
+  padding-left: 0;
+  padding-top: 0;
+}
+.hero .page .right_col li a {
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+  text-align: left;
+  margin-left: 0;
+  display: block;
+  padding: 0.18em;
+}
+.hero .page .right_col li a:hover {
+  font-weight: bold;
+  color: rgba(255, 0, 0, 0.688);
+}
+
+.hero_info {
+  width: auto;
+  margin-right: 0;
+  padding-right: 0;
+}
+.hero_info .info {
+  width: auto;
+  margin-left: 1.5em;
+}
+.hero_info .info .question {
+  margin-left: 2em;
+  font-size: 1.4em;
+  margin-bottom: 2em;
+  margin-top: 1em;
+  text-align: center;
+  /*span{
+   border-bottom: 5.5px solid red;
+  }*/
+}
+.hero_info .info .fs {
+  width: 28em;
+}
+.hero_info .info .fs1 {
+  padding-right: 0;
+  margin-right: 0;
+  padding-left: 0;
+  width: auto;
+  margin-bottom: 1em;
+}
+.hero_info .info .fs2 {
+  width: auto;
+}
+
+.contact_section .contact_left .contact_heading {
+  margin-left: 10em;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+.contact_section .contact_left label {
+  display: block;
+}
+.contact_section .contact_left input, .contact_section .contact_left textarea {
+  background-color: rgb(237, 237, 237);
+  width: 30em;
+  margin-left: 2em;
+  padding: 0.7em;
+  margin-bottom: 0.8em;
+  border-radius: 0.3em;
+  border-color: rgb(230, 229, 229);
+}
+.contact_section .contact_left input[type=submit] {
+  background-color: red;
+  width: 5.5em;
+  border-radius: 0.5em;
+  color: white;
+  font-style: bold;
+  font-family: "Poppins";
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.yt_video {
+  margin-top: 2em;
+  margin-left: 2em;
+}
+.yt_video iframe {
+  width: 26em;
+}
+
+.map_contacts {
+  background-color: rgba(0, 0, 0, 0.842);
+  width: auto;
+  padding-top: 0;
+  padding-left: 2em;
+}
+.map_contacts .map .heading {
+  color: rgb(252, 249, 249);
+  margin-top: 1em;
+  padding-top: 0.3em;
+  padding-bottom: 0;
+  margin-bottom: 0.4em;
+  font-style: normal;
+  font-size: 1.4em;
+}
+.map_contacts .map iframe {
+  width: 25em;
+  height: 20em;
+}
+.map_contacts .contacts {
+  color: white;
+}
+.map_contacts .contacts .heading {
+  font-size: 1.4em;
+}
+.map_contacts .contacts ul {
+  font-weight: 350;
+  margin-left: 0;
+  padding-left: 0;
+}
+.map_contacts .contacts li {
+  font-style: normal;
+  display: block;
+  padding: 0.5em;
+}
+.map_contacts .contacts .name {
+  padding-bottom: 0;
+  margin-bottom: -0.5em;
+}
+.map_contacts a {
+  color: white;
+  text-decoration: none;
+}
+.map_contacts a:hover {
+  font-weight: bold;
+  color: red;
+  font-size: 1.1em;
+}
+
+.map_contacts .underline {
+  background-color: grey;
+  height: 0.1em;
+  margin-top: 1.5em;
+  margin-right: 1em;
+}
+
+.hero .underline {
+  background-color: rgba(0, 0, 0, 0.247);
+  height: 0.1em;
+  margin-right: 2em;
+  margin-bottom: 2em;
+}
+
+.hero .underline1 {
+  background-color: red;
+  height: 0.35em;
+  margin-right: 12em;
+  margin-left: 2em;
+}
+
+.hero_info .underline1 {
+  background-color: red;
+  height: 0.4em;
+  margin-top: -1.8em;
+  margin-bottom: 2em;
+  margin-left: 11em;
+  margin-right: 9em;
+}
+
+.contact_section .underline1 {
+  background-color: red;
+  height: 0.4em;
+  margin-top: -2em;
+  margin-bottom: 2em;
+  margin-left: 12em;
+  margin-right: 12em;
+}
+
+.hero_info .para_filler1 {
+  display: flex;
+}
+.hero_info .para_filler1 h3 {
+  padding: 2em;
+}
+.hero_info .para_filler1 h3 span {
+  border-bottom: solid red 3px;
+}
+.hero_info .para_filler1 h3:hover {
+  color: red;
+  font-weight: bold;
+}
+
+.hero_info .para_filler2 {
+  display: flex;
+  margin-bottom: 1em;
+}
+.hero_info .para_filler2 h3 {
+  padding: 2em;
+}
+.hero_info .para_filler2 span {
+  border-bottom: solid red 3px;
+}
+.hero_info .para_filler2:hover {
+  color: red;
+  font-weight: bold;
+}
+
+.socials {
+  display: block;
+  margin-top: 0;
+  margin-left: 0;
+  padding-top: 0;
+  width: auto;
+}
+.socials .emails {
+  width: 2em;
+  padding: 1.5em;
+}
+
+@media only screen and (min-width: 1080px) {
+  .menu {
+    display: none;
+  }
+  .logo {
+    width: 11em;
+  }
+  .navbar {
+    position: fixed;
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+  }
+  .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: flex;
+    margin-top: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 8em;
+  }
+  .navbar nav a {
+    color: white;
+    font-size: 1.3em;
+    padding: 2em 2em;
+    text-decoration: none;
+  }
+  .navbar nav a:hover {
+    color: red;
+  }
+  .hero .About {
+    width: 40em;
+    margin: 0;
+    padding-top: 0.5em;
+    font-size: 1.3em;
+    padding-left: 2em;
+  }
+  .hero .page {
+    background-color: rgba(0, 0, 0, 0.842);
+    display: flex;
+    margin-bottom: 2em;
+  }
+  .hero .page .left_col {
+    background-color: grey;
+    border-radius: 0;
+    width: 20em;
+    margin-top: 2.5em;
+    margin-left: 14em;
+  }
+  .hero .page .right_col {
+    margin-top: 2em;
+    margin-left: 25em;
+    margin-bottom: 2em;
+    border-radius: 0;
+    width: 20em;
+  }
+  .hero_info .info .question {
+    margin-left: 1em;
+    padding-left: 0;
+    font-size: 2em;
+    width: auto;
+  }
+  .hero_info .info .paragraph {
+    display: flex;
+  }
+  .hero_info .info .paragraph .fs {
+    width: 50em;
+  }
+  .hero_info .info .only_paragraph {
+    margin-right: 0;
+    display: block;
+    margin-left: 2em;
+  }
+  .hero_info .info .only_paragraph p {
+    font-weight: 100;
+    font-size: 1.5em;
+  }
+  .hero_info .info .only_paragraph .fs1 {
+    margin-bottom: 0;
+  }
+  .contact_section .contact_left .contact_heading {
+    margin-left: 0;
+    margin-bottom: 2em;
+    padding-left: 3em;
+    width: auto;
+    margin-top: 2em;
+    font-size: 1.8em;
+  }
+  .contact_section .contact_left input {
+    margin-left: 5em;
+    width: 35em;
+  }
+  .contact_section .contact_left textarea {
+    margin-left: 5em;
+    width: 35em;
+  }
+  .contact_section .contact_left input[type=submit] {
+    display: block;
+  }
+  .contact_section .contact_video {
+    display: flex;
+  }
+  .contact_section .contact_video .yt_video {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 3.5em;
+    padding: 0;
+  }
+  .contact_section .contact_video .yt_video iframe {
+    width: 40em;
+  }
+  .map_contacts .map_n_contacts {
+    display: flex;
+  }
+  .map_contacts .contacts {
+    margin-left: 10em;
+    margin-top: 2em;
+  }
+  .map_contacts .map {
+    margin-left: 10em;
+  }
+  .map_contacts .map iframe {
+    height: 15em;
+  }
+  .map_contacts .contacts .location {
+    width: 15em;
+  }
+  .map_contacts .socials {
+    margin-top: 3em;
+    margin-left: 30em;
+  }
+  .map_contacts .underline {
+    background-color: grey;
+    height: 0.1em;
+    margin-top: 3em;
+    margin-left: 2em;
+    margin-right: 5em;
+  }
+  .hero .underline1 {
+    background-color: red;
+    height: 0.3em;
+    margin-right: 32em;
+    margin-left: 1em;
+  }
+  .hero_info .underline1 {
+    background-color: red;
+    height: 0.3em;
+    margin-right: 31em;
+    margin-left: 31em;
+    margin-top: -3.5em;
+  }
+  .contact_section .underline1 {
+    background-color: red;
+    height: 0.3em;
+    margin-right: 75em;
+    margin-left: 8em;
+    margin-top: -3.5em;
+  }
+  .navbar .logo {
+    width: 10em;
+    margin-left: 2em;
+    height: 4em;
+  }
+  .hero_info .para_filler1 {
+    margin-left: 5em;
+    margin-top: 0;
+  }
+  .hero_info .para_filler1 h3 {
+    font-size: 2em;
+  }
+  .hero_info .para_filler2 {
+    margin-left: 5em;
+    margin-bottom: 1em;
+  }
+  .hero_info .para_filler2 h3 {
+    font-size: 2em;
+  }
+}/*# sourceMappingURL=main.css.map */
